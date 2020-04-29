@@ -1,0 +1,46 @@
+1.UPC
+  UPCs in our program are 4-digit integers. Each integer upc is uniquely associated with a product.
+
+2. Location of products
+  Each product's location consists of 2 integer--aisleNumber and shelveNumber.
+
+3. The format of the initial inventory csv file should be:
+   product upc, product name, product price, product quantity, product section, product threshold, product location
+
+4. event.txt format
+  GroceryDemo reads event.txt line by line, each line represents an event. An event has three
+  components: performer, action, actionDetail. Those three are seperated using "/".
+  I will list all possible event combination below.
+  Words after ":" below are the exact strings that need to be put.
+  Words inside "[]" are descriptions for the argument you need to put in event.txt
+
+  performer: cashier
+      action: scanProduct    actionDetail:[several upc, seperated using ",", for example 1,2,2,3]
+      action: receivedCash   actionDetail: true
+
+  performer: manager
+      action: setSale  actionDetail:[(product upc), discount(number or number+"%", see setSale method
+                              in Manager class for more information), (sale startDate), (sale endDate)[the format
+                                of date should be yyyy-MM-DD]]
+      action: checkInventory  actionDetail: true
+
+  performer: receiver
+      action: receiveProduct  actionDetail:  upc:quantity , upc:quantity  //can add more upc:quantity
+      [Receiver can receive several products at the same time, the format for each product is
+       upc : quantity ]
+
+  performer: reshelver
+      action: relocateProduct  actionDetail: upc, newAisleNumber:newShelveNumber
+      [Reshelver can only relocate one type of product per time, the format is upc,
+      newAisleNumber:newShelveNumber]
+
+  performer: userquestion
+      action: location  actiondetail:upc [User can ask the exact location of a product with its upc]
+      action: quantity  actiondetail:upc [User can ask the exact quantity of a product with its upc]
+      action: price     actiondetail:upc [User can ask the current price of a product with its upc ]
+
+5.how to run our program
+      this main method is contained in class GroceryDemo.
+      when running GroceryDemo, DO make sure that the path of event.txt, inventory.csv are correct.
+      because the path we are using for tesing is local path.
+      event.txt and inventory.csv are both in ProjectPhase1!

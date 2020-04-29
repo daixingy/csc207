@@ -1,0 +1,10 @@
+cashier/scanProduct/101234000010,101234000020,101234000020,101234000030
+cashier/receivedCash/true
+manager/setSale/101234000040,20,2016-12-12,2019-12-12
+receiver/receiveProduct/101234000020:15,101234000030:20
+reshelver/relocateProduct/101234000020,2:4
+cashier/scanProduct/101234000010,101234000020,101234000080
+userquestion/location/101234000040
+userquestion/price/101234000020
+userquestion/quantity/101234000050
+manager/checkInventory/true

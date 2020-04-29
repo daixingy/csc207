@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReshelverSceneController">
+   <children>
+      <TitledPane animated="false" prefHeight="584.0" prefWidth="850.0" text="Reshelver">
+         <content>
+            <TabPane prefHeight="557.0" prefWidth="829.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Check Location">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="524.0" prefWidth="832.0">
+                           <children>
+                              <SplitPane dividerPositions="0.3511705685618729, 0.36454849498327757" layoutX="-2.0" layoutY="-1.0" prefHeight="526.0" prefWidth="850.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="524.0" prefWidth="306.0">
+                                       <children>
+                                          <TextField fx:id="product1" layoutX="95.0" layoutY="72.0" prefHeight="26.0" prefWidth="142.0" />
+                                          <Label layoutX="30.0" layoutY="61.0" prefHeight="48.0" prefWidth="80.0" text="Product" />
+                                          <Button fx:id="Check" layoutX="177.0" layoutY="128.0" mnemonicParsing="false" onAction="#checkLocation" prefHeight="31.0" prefWidth="69.0" text="Check" />
+                                          <Button fx:id="logout" layoutX="14.0" layoutY="288.0" mnemonicParsing="false" onAction="#reshelverLogout" prefHeight="29.0" prefWidth="71.0" text="log out" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="511.0" prefWidth="1.0" />
+                                    <TableView fx:id="tableView" prefHeight="524.0" prefWidth="553.0">
+                                      <columns>
+                                        <TableColumn fx:id="nameColumn" prefWidth="265.0" text="Product" />
+                                        <TableColumn fx:id="locationColumn" minWidth="0.0" prefWidth="263.0" text="Location" />
+                                      </columns>
+                                    </TableView>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Reshelve Product">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="product2" layoutX="351.0" layoutY="138.0" prefHeight="26.0" prefWidth="172.0" />
+                              <TextField fx:id="newLocation" layoutX="351.0" layoutY="195.0" prefHeight="26.0" prefWidth="173.0" />
+                              <Label layoutX="278.0" layoutY="135.0" prefHeight="33.0" prefWidth="50.0" text="Product" />
+                              <Label layoutX="262.0" layoutY="200.0" text="New Location" />
+                              <Button fx:id="Change" layoutX="380.0" layoutY="254.0" mnemonicParsing="false" onAction="#reshelveProduct" prefHeight="37.0" prefWidth="115.0" text="Change" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+
+Xingyue Dai : helped design program by crc cards.
+              helped initianize the program.
+              helped construct the classes of this program.
+              realized and some functionality of this program such as categorizing the events,
+              changing layout of stores, reordering product, userquestion, etc.
+              fixed some problems, for example, the price of a product doesn't change when method
+              setSaleByPrice is called.
+              wrote javadoc and comments.
+              helped wrote help.txt, events.txt, inventory.csv
+
+Olivia Choi : helped coming up with design patterns of the project.
+              helped coming up with the format of which how the data should be stored.
+              helped coming up and constructing some of the classes in the program.
+              helped writing javadoc and codes for the project.
+              helped writing new methods that help the program run.
+              helped editing and fixing codes that are not working.
+              helped writing logs for the program.
+
+Yingcheng Luo: wrote the first draft codes with the help of Xingyue and Olivia.
+               wrote javadoc on Cashier, csvReader, Manager, etc.
+               fixed some bugs in GroceryDemo, priceSystem
+               generated uml diagrams
+
+
+

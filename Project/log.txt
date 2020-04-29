@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337902</millis>
+  <sequence>1</sequence>
+  <logger>Inventory</logger>
+  <level>FINE</level>
+  <class>Inventory</class>
+  <method>&lt;init&gt;</method>
+  <thread>1</thread>
+  <message>Inventory has been initialized</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:58</date>
+  <millis>1500932338008</millis>
+  <sequence>10</sequence>
+  <logger>Inventory</logger>
+  <level>FINER</level>
+  <class>Inventory</class>
+  <method>saveInventory</method>
+  <thread>1</thread>
+  <message>Inventory has been saved to /Users/yingchengluo/Desktop/inventory1.csv</message>
+</record>
+record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337948</millis>
+  <sequence>2</sequence>
+  <logger>Cashier</logger>
+  <level>FINER</level>
+  <class>Cashier</class>
+  <method>scanItems</method>
+  <thread>1</thread>
+  <message>A scanned some shopping items. Their total value is $108</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337952</millis>
+  <sequence>3</sequence>
+  <logger>Cashier</logger>
+  <level>FINER</level>
+  <class>Cashier</class>
+  <method>customerPaid</method>
+  <thread>1</thread>
+  <message>A received payment from customer, the inventory has changed</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337962</millis>
+  <sequence>5</sequence>
+  <logger>Cashier</logger>
+  <level>FINE</level>
+  <class>Receiver</class>
+  <method>recieveOrder</method>
+  <thread>1</thread>
+  <message>D just received 15 Milk</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337965</millis>
+  <sequence>6</sequence>
+  <logger>Cashier</logger>
+  <level>FINE</level>
+  <class>Receiver</class>
+  <method>recieveOrder</method>
+  <thread>1</thread>
+  <message>D just received 20 Rice</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337968</millis>
+  <sequence>7</sequence>
+  <logger>Cashier</logger>
+  <level>FINE</level>
+  <class>Reshelver</class>
+  <method>changeLocationProduct</method>
+  <thread>1</thread>
+  <message>C changed the current location of Milk</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337971</millis>
+  <sequence>8</sequence>
+  <logger>Cashier</logger>
+  <level>FINER</level>
+  <class>Cashier</class>
+  <method>scanItems</method>
+  <thread>1</thread>
+  <message>A scanned some shopping items. Their total value is $118</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337960</millis>
+  <sequence>4</sequence>
+  <logger>Manager</logger>
+  <level>FINE</level>
+  <class>Manager</class>
+  <method>setSaleProduct</method>
+  <thread>1</thread>
+  <message>B set Beef on sale</message>
+</record>
+<record>
+  <date>2017-07-24T17:38:57</date>
+  <millis>1500932337974</millis>
+  <sequence>9</sequence>
+  <logger>Manager</logger>
+  <level>FINE</level>
+  <class>Manager</class>
+  <method>checkInventory</method>
+  <thread>1</thread>
+  <message>B checked the store inventory</message>
+</record>
+</log>
