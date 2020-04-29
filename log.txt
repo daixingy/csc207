@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-08-10T19:44:04</date>
+  <millis>1502408644629</millis>
+  <sequence>1</sequence>
+  <logger>Inventory</logger>
+  <level>FINE</level>
+  <class>Inventory</class>
+  <method>&lt;init&gt;</method>
+  <thread>13</thread>
+  <message>Inventory has been initialized</message>
+</record>
+<record>
+  <date>2017-08-10T19:49:17</date>
+  <millis>1502408957755</millis>
+  <sequence>8</sequence>
+  <logger>Inventory</logger>
+  <level>FINE</level>
+  <class>Inventory</class>
+  <method>addProducts</method>
+  <thread>13</thread>
+  <message>100Moohas been added into inventory</message>
+</record>
+</log>
